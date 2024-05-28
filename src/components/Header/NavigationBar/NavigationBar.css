@@ -1,0 +1,35 @@
+.headerNav ul {
+  gap: 3.5rem;
+  justify-content: center;
+}
+
+.headerNav {
+  flex-grow: 2;
+}
+
+.hnItem {
+  @apply flex cursor-pointer flex-col items-center justify-center;
+
+  width: 100%;
+
+}
+
+.activeMenu span {
+  @apply text-blue-700;
+}
+
+.activeMenu::after {
+  content: '';
+  @apply absolute block w-20 h-6 border-b-2 border-b-blue-700;
+  bottom: -2px;
+}
+
+.activeMenu:hover {
+  background-color: transparent !important;
+}
+
+.hnItem:hover {
+  @apply bg-zinc-700;
+  height: 50px;
+  border-radius: .6rem;
+} 
