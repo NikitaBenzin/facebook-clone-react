@@ -1,0 +1,55 @@
+.stories {
+
+}
+
+.stories > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.stories > ul li {
+  cursor: pointer;
+}
+
+.stories > ul li:hover {
+  opacity: .9;
+}
+
+#createStories {
+  @apply text-zinc-100 font-semibold relative flex flex-col justify-end items-center text-center;
+}
+
+.storiesItem {
+  @apply text-zinc-100 font-semibold relative h-[250px] rounded-xl flex flex-col justify-between;  
+}
+
+.storiesItem::after {
+  content: '';
+  @apply absolute w-full h-full rounded-xl;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.addStories {
+  @apply bg-zinc-800 w-full rounded-ee-xl rounded-es-xl pb-2 flex flex-col justify-end items-center h-14;
+}
+
+#addStoriesBtn {
+  @apply outline-4 outline-zinc-800 outline flex translate-y-[-10%] rounded-full w-fit ;
+}
+
+#addStoriesBtn > span {
+  @apply bg-blue-600 rounded-full p-2;
+}
+
+.storiesItem > img {
+  @apply rounded-xl absolute z-0 object-cover h-full;
+}
+
+.storiesProfileLayout > .profileImg {
+  @apply m-3 outline-4 outline-blue-600 outline;
+}
+
+
+.storiesItem > h4 {
+  @apply m-3;
+}

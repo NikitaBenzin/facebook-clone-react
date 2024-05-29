@@ -1,0 +1,13 @@
+.feed {
+  @apply flex flex-col gap-4;
+}
+
+
+
+.index1 {
+  position: relative;
+  z-index: 1;
+}
+
+
+

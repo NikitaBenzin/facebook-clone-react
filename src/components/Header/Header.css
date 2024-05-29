@@ -45,12 +45,8 @@ header span {
   @apply bg-zinc-600;
 }
 
-.psItem:last-child img {
-  @apply block size-10 rounded-full;
-  object-fit: cover;
-}
 .psItem:last-child  {
-  @apply p-0;
+  @apply p-0 w-10;
 }
 
 .profileSection {

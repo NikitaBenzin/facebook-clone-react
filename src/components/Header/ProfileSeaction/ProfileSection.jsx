@@ -21,7 +21,7 @@ export const ProfileSection = () => {
           </span>
         </li>
         <li className="psItem">
-          <img src={profileImg} alt="User Profile" />
+          <img className='profileImg' src={profileImg} alt="User Profile" />
         </li>
       </ul>
     </div>

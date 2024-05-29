@@ -1,0 +1,28 @@
+.addContent {
+  @apply bg-zinc-800 rounded-lg;
+  padding: 8px;
+}
+
+.contentDescription {
+  @apply flex gap-4 border-b-2 border-b-zinc-700 pb-3;
+}
+
+#contentDescriptionInput {
+  @apply bg-zinc-700 pl-3 pr-3 rounded-full w-11/12 block;
+}
+
+.addMedia {
+  @apply pt-1;
+}
+
+.addMedia > ul {
+  @apply flex justify-evenly;
+}
+
+.mediaItem {
+  @apply flex items-center gap-2 cursor-pointer p-2;
+}
+
+.mediaItem:hover {
+  @apply bg-zinc-700 rounded-xl;
+}
