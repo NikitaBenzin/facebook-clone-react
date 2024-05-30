@@ -3,8 +3,7 @@
 }
 
 .stories > ul {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  @apply flex justify-start;
 }
 
 .stories > ul li {
@@ -20,7 +19,7 @@
 }
 
 .storiesItem {
-  @apply text-zinc-100 font-semibold relative h-[250px] rounded-xl flex flex-col justify-between;  
+  @apply text-zinc-100 font-semibold relative h-[250px] w-[150px] rounded-xl flex flex-col justify-between;  
 }
 
 .storiesItem::after {
@@ -41,8 +40,8 @@
   @apply bg-blue-600 rounded-full p-2;
 }
 
-.storiesItem > img {
-  @apply rounded-xl absolute z-0 object-cover h-full;
+.storiesPreview {
+  @apply rounded-xl absolute z-0 object-cover h-full w-full;
 }
 
 .storiesProfileLayout > .profileImg {

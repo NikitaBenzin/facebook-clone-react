@@ -9,13 +9,13 @@ export const Sidebar = () => {
 
   return (
     <section className='sidebar'>
-      <div className='burgerMenuLayout'>
-        <span id='burgerMenu' class="material-symbols-outlined" onClick={() => setIsBurger(!isBurger)}>
-          menu
-        </span>
-      </div>
-      <div className={isBurger ? "sidebarNav open" : "sidebarNav"}>
-        <ul>
+      <div>
+        <div className='burgerMenuLayout'>
+          <span id='burgerMenu' class="material-symbols-outlined" onClick={() => setIsBurger(!isBurger)}>
+            menu
+          </span>
+        </div>
+        <ul className={isBurger ? "sidebarNav open" : "sidebarNav"}>
           <li className="sidebarItem profileImgLayout">
             <img className='profileImg' src={profileImg} alt="User Profile" />
             <h4>Mykyta Benzin</h4>
@@ -76,6 +76,19 @@ export const Sidebar = () => {
           </li>
         </ul>
       </div>
+
+      <div className="sidebarLinks">
+        <ul>
+          <li className="sidebarLinksItem">Конфиденциальность</li>
+          <li className="sidebarLinksItem">Условия использования</li>
+          <li className="sidebarLinksItem">Реклама</li>
+          <li className="sidebarLinksItem">Рекламные предпочтения</li>
+          <li className="sidebarLinksItem">Файлы cookie</li>
+          <li>© Meta, 2024</li>
+        </ul>
+
+      </div>
+
     </section>
   )
 }

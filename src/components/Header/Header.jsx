@@ -7,7 +7,7 @@ import { SearchBar } from './SerachBar/SearchBar'
 export const Header = () => {
   return (
     <header className="AppHeader">
-      <img src={logo} alt="Facebook logo" />
+      <a href="https://facebook.com"><img src={logo} alt="Facebook logo" /></a>
       <SearchBar />
       <NavigationBar />
       <ProfileSection />

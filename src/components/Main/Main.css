@@ -1,5 +1,5 @@
 main {
-  @apply grid p-6;
+  @apply grid p-6 pl-0 pr-0;
   grid-template-columns: 1fr 2fr 1fr;
 }
 

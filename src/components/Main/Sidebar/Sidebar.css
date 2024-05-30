@@ -1,9 +1,13 @@
-.sidebarNav > ul{
-  @apply flex flex-col items-start gap-3 border-b-[1px] border-b-zinc-800 pb-4;
+.sidebar {
+  @apply flex flex-col gap-5;
+}
+
+.sidebarNav{
+  @apply flex flex-col items-start gap-3 border-b-[1px] border-b-zinc-800 pb-4 mr-4 ml-4;
 }
 
 .sidebarItem {
-  @apply flex w-full items-center gap-4 text-zinc-100 font-semibold cursor-pointer;
+  @apply flex w-full items-center gap-4 text-zinc-100 font-semibold cursor-pointer p-2;
 }
 
 .sidebarItem > span {
@@ -22,8 +26,8 @@
   display: flex !important;
 }
 
-.sidebarItem:not(:last-child, :first-child):hover {
-  @apply bg-zinc-600;
+.sidebarItem:hover {
+  @apply bg-zinc-600 rounded-lg;
 }
 
 .sidebarItem:first-child:hover {
@@ -47,3 +51,21 @@
     display: none;
   }
 }
+
+.sidebarLinks {
+  @apply text-zinc-500;
+}
+
+.sidebarLinks > ul {
+  @apply flex flex-wrap justify-start;
+}
+
+.sidebarLinksItem {
+  @apply text-sm cursor-pointer hover:underline flex items-center gap-2;
+}
+
+.sidebarLinksItem::after {
+  content: '';
+  @apply block size-1 bg-zinc-500 rounded-full;
+}
+

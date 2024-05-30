@@ -14,7 +14,7 @@
 }
 
 .profileImg {
-  @apply block size-10 rounded-full;
+  @apply block size-10 rounded-full cursor-pointer;
   object-fit: cover;
 }
 
